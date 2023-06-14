@@ -17,6 +17,7 @@
         <azure.functions.java.library.version>1.4.2</azure.functions.java.library.version>
         <functionAppName>com.microsoft.azure-20220215182005862</functionAppName>
         <resteasy.version>3.15.3.Final</resteasy.version>
+        <json.version>20230227</json.version>
     </properties>
 
     <dependencies>
@@ -33,7 +34,13 @@
         </dependency>
 
         <!-- End Azure -->
-
+        <!-- Start JSON -->
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>${json.version}</version>
+        </dependency>
+        <!-- End JSON -->
         <!-- Test -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
